@@ -1,2 +1,2 @@
 # 40AppForSwift
-Study Of  Swift
+  Swift 3.0
