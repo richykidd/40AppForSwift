@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_面部识别" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face" translatesAutoresizingMaskIntoConstraints="NO" id="eaZ-WW-1CE">
+                                <rect key="frame" x="0.0" y="40" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="WaZ-LY-di4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-xS-tRI">
+                                <rect key="frame" x="171.5" y="290" width="31" height="46"/>
+                                <state key="normal" title="识别">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVD-Jw-21Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-sa-sV7">
+                                <rect key="frame" x="87" y="606" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RCv-GQ-SZL">
+                                <rect key="frame" x="87" y="366" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Zol-4Q-0jQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="khw-Gh-psw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eaZ-WW-1CE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9RY-Wj-IZs"/>
+                            <constraint firstItem="PAa-xS-tRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9iI-zp-nPB"/>
+                            <constraint firstItem="RCv-GQ-SZL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDd-Xr-YIk"/>
+                            <constraint firstItem="lOX-sa-sV7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JkL-nA-8BP"/>
+                            <constraint firstItem="lOX-sa-sV7" firstAttribute="width" secondItem="RCv-GQ-SZL" secondAttribute="width" id="WLZ-Ir-7lj"/>
+                            <constraint firstAttribute="trailing" secondItem="eaZ-WW-1CE" secondAttribute="trailing" id="YOW-CH-Rjv"/>
+                            <constraint firstItem="eaZ-WW-1CE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZKB-H0-53d"/>
+                            <constraint firstItem="lOX-sa-sV7" firstAttribute="top" secondItem="RCv-GQ-SZL" secondAttribute="bottom" constant="40" id="ghW-bb-a82"/>
+                            <constraint firstItem="RCv-GQ-SZL" firstAttribute="top" secondItem="PAa-xS-tRI" secondAttribute="bottom" constant="30" id="nCo-il-Ele"/>
+                            <constraint firstItem="PAa-xS-tRI" firstAttribute="top" secondItem="eaZ-WW-1CE" secondAttribute="bottom" constant="50" id="vCO-Ui-CRu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lOX-sa-sV7" secondAttribute="bottom" constant="40" id="wvk-EP-vbg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="originImg" destination="eaZ-WW-1CE" id="WPg-46-pqS"/>
+                        <outlet property="resultImg" destination="RCv-GQ-SZL" id="Xae-Ck-yfp"/>
+                        <outlet property="resultLabel" destination="lOX-sa-sV7" id="UnD-q4-0Dh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="face" width="360" height="240"/>
+    </resources>
+</document>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qXI-tU-YG3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top View Controller-->
+        <scene sceneID="20h-PB-7By">
+            <objects>
+                <viewController id="PCI-sH-m46" customClass="TopViewController" customModule="_4_图片左右滑动" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wG6-dU-XLg"/>
+                        <viewControllerLayoutGuide type="bottom" id="3b5-eA-NPr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lvT-sT-wHY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-Ct-CgN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wJT-Ct-CgN" firstAttribute="top" secondItem="wG6-dU-XLg" secondAttribute="bottom" id="76v-I5-WcA"/>
+                            <constraint firstAttribute="trailing" secondItem="wJT-Ct-CgN" secondAttribute="trailing" id="AcE-y2-2No"/>
+                            <constraint firstItem="3b5-eA-NPr" firstAttribute="top" secondItem="wJT-Ct-CgN" secondAttribute="bottom" id="euT-av-Upp"/>
+                            <constraint firstItem="wJT-Ct-CgN" firstAttribute="leading" secondItem="lvT-sT-wHY" secondAttribute="leading" id="gWY-Eo-cGx"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RjF-lK-fyj" appends="YES" id="Qyi-dD-GYB"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hr5-jO-vSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="RjF-lK-fyj">
+                    <connections>
+                        <action selector="left:" destination="PCI-sH-m46" id="yJc-Do-12X"/>
+                        <segue destination="qXI-tU-YG3" kind="presentation" identifier="toMiddle" id="hT5-i1-a2M"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="106" y="986"/>
+        </scene>
+        <!--Middle View Controller-->
+        <scene sceneID="afv-fh-Acn">
+            <objects>
+                <viewController id="qXI-tU-YG3" customClass="MiddleViewController" customModule="_4_图片左右滑动" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QgU-Lo-Ta8"/>
+                        <viewControllerLayoutGuide type="bottom" id="EgI-Ko-kSG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iMM-YS-d3l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Middle" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-uA-2m6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EgI-Ko-kSG" firstAttribute="top" secondItem="gTg-uA-2m6" secondAttribute="bottom" id="Bto-nA-tsb"/>
+                            <constraint firstAttribute="trailing" secondItem="gTg-uA-2m6" secondAttribute="trailing" id="GlF-gx-A3O"/>
+                            <constraint firstItem="gTg-uA-2m6" firstAttribute="top" secondItem="QgU-Lo-Ta8" secondAttribute="bottom" id="dBw-XL-BbI"/>
+                            <constraint firstItem="gTg-uA-2m6" firstAttribute="leading" secondItem="iMM-YS-d3l" secondAttribute="leading" id="q9y-r1-ai6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JLQ-bL-WqP" appends="YES" id="UyO-Bu-gS5"/>
+                            <outletCollection property="gestureRecognizers" destination="AcC-Vm-MJI" appends="YES" id="KEa-a2-Y0u"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foq-Oj-YVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="JLQ-bL-WqP">
+                    <connections>
+                        <action selector="left:" destination="qXI-tU-YG3" id="m8f-oS-Bkc"/>
+                        <segue destination="pr2-38-RCg" kind="presentation" identifier="toBottom" id="6zE-V5-hOY"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="AcC-Vm-MJI">
+                    <connections>
+                        <action selector="right:" destination="qXI-tU-YG3" id="Sg7-MP-7x6"/>
+                        <segue destination="PCI-sH-m46" kind="presentation" identifier="toTop" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="erx-ts-WbD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="266" y="123"/>
+        </scene>
+        <!--Bottom View Controller-->
+        <scene sceneID="KRK-7I-ewK">
+            <objects>
+                <viewController id="pr2-38-RCg" customClass="BottomViewController" customModule="_4_图片左右滑动" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GC0-9u-YVB"/>
+                        <viewControllerLayoutGuide type="bottom" id="UT1-Z3-zUJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fbL-iF-xl1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bottom" translatesAutoresizingMaskIntoConstraints="NO" id="UMP-pF-O9d">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UMP-pF-O9d" firstAttribute="leading" secondItem="fbL-iF-xl1" secondAttribute="leading" id="GrD-7A-w6w"/>
+                            <constraint firstAttribute="trailing" secondItem="UMP-pF-O9d" secondAttribute="trailing" id="JRM-4l-eFa"/>
+                            <constraint firstItem="UT1-Z3-zUJ" firstAttribute="top" secondItem="UMP-pF-O9d" secondAttribute="bottom" id="O29-2B-3wu"/>
+                            <constraint firstItem="UMP-pF-O9d" firstAttribute="top" secondItem="GC0-9u-YVB" secondAttribute="bottom" id="d4g-GS-CIq"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="46P-MY-YWa" appends="YES" id="Ye5-wV-sG4"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dG-QO-jxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="46P-MY-YWa">
+                    <connections>
+                        <action selector="rightSwipe:" destination="pr2-38-RCg" id="YRv-0L-tgD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1074" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bottom" width="750" height="1334"/>
+        <image name="Middle" width="750" height="1334"/>
+        <image name="Top" width="750" height="1334"/>
+    </resources>
+</document>

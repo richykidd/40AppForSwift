@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_图片保存到相册" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jh13" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-v3-TgL">
+                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="BGX-iW-VyR"/>
+                                    <constraint firstAttribute="width" constant="250" id="N56-9u-apK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwC-Cq-YBz">
+                                <rect key="frame" x="87" y="508" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.2126047522" green="0.58464905099999998" blue="0.27200437500000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X7x-bt-RVM"/>
+                                    <constraint firstAttribute="width" constant="200" id="ujW-eK-CPY"/>
+                                </constraints>
+                                <state key="normal" title="保存图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwf-Tc-Up3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ch4-v3-TgL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OvC-0C-H1q"/>
+                            <constraint firstItem="xwC-Cq-YBz" firstAttribute="top" secondItem="ch4-v3-TgL" secondAttribute="bottom" constant="50" id="UZx-3k-u4Q"/>
+                            <constraint firstItem="xwC-Cq-YBz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b6X-Nu-AyG"/>
+                            <constraint firstItem="ch4-v3-TgL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ieV-I9-D8u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImage" destination="ch4-v3-TgL" id="snW-Zq-sYF"/>
+                        <outlet property="saveButton" destination="xwC-Cq-YBz" id="VjK-Xk-rB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jh13" width="851" height="851"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Zf-Ef-kno">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fourth View Controller-->
+        <scene sceneID="i7N-rd-yRB">
+            <objects>
+                <viewController id="1Zf-Ef-kno" customClass="FourthViewController" customModule="_5_五种动画效果" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xpj-u8-P11"/>
+                        <viewControllerLayoutGuide type="bottom" id="svL-wh-Ahm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lxb-Hn-c7d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVM-j6-SPI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="richykidd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cK-xj-hCd">
+                                        <rect key="frame" x="87.5" y="276.5" width="200.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ne5-Te-C5a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2126047522" green="0.58464905099999998" blue="0.27200437500000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0cK-xj-hCd" firstAttribute="centerX" secondItem="YVM-j6-SPI" secondAttribute="centerX" id="RJL-xo-Mja"/>
+                                    <constraint firstItem="0cK-xj-hCd" firstAttribute="centerY" secondItem="YVM-j6-SPI" secondAttribute="centerY" id="Xk6-9o-eiG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YVM-j6-SPI" firstAttribute="leading" secondItem="lxb-Hn-c7d" secondAttribute="leading" id="02Y-9F-k7h"/>
+                            <constraint firstItem="svL-wh-Ahm" firstAttribute="top" secondItem="YVM-j6-SPI" secondAttribute="bottom" id="8Rf-co-7qx"/>
+                            <constraint firstAttribute="trailing" secondItem="YVM-j6-SPI" secondAttribute="trailing" id="Lcr-Oh-3AO"/>
+                            <constraint firstItem="YVM-j6-SPI" firstAttribute="top" secondItem="xpj-u8-P11" secondAttribute="bottom" id="ceP-pj-fFR"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="backgView" destination="YVM-j6-SPI" id="u6a-1p-NM1"/>
+                        <outlet property="nameLabel" destination="0cK-xj-hCd" id="zsG-Xi-FlY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ix-9g-B4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="291"/>
+        </scene>
+    </scenes>
+</document>

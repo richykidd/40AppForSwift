@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IbH-e9-vdq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="vrJ-Xc-tvs">
+            <objects>
+                <viewController id="IbH-e9-vdq" customClass="SecondViewController" customModule="_5_五种动画效果" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xlm-UM-g7S"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3m-vg-7WP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CKp-Pa-bDW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colored ASCII art" translatesAutoresizingMaskIntoConstraints="NO" id="67B-xj-hvY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="67B-xj-hvY" firstAttribute="top" secondItem="xlm-UM-g7S" secondAttribute="bottom" constant="-64" id="F2i-Kh-Wzd"/>
+                            <constraint firstAttribute="trailing" secondItem="67B-xj-hvY" secondAttribute="trailing" id="eAM-wq-cfk"/>
+                            <constraint firstItem="67B-xj-hvY" firstAttribute="leading" secondItem="CKp-Pa-bDW" secondAttribute="leading" id="jMU-WS-CW2"/>
+                            <constraint firstItem="w3m-vg-7WP" firstAttribute="top" secondItem="67B-xj-hvY" secondAttribute="bottom" id="uXQ-4y-Y26"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="backImage" destination="67B-xj-hvY" id="jgm-fW-Zzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4nh-HE-aF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935.2" y="200.14992503748127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="colored ASCII art" width="867" height="667"/>
+    </resources>
+</document>

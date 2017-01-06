@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="91A-h4-zdu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="20D-Fg-xOc">
+            <objects>
+                <viewController id="91A-h4-zdu" customClass="ThirdViewController" customModule="_5_五种动画效果" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SWv-8G-4ZQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vlr-Jc-Vu6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ALQ-Iy-cRe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji alpha me" translatesAutoresizingMaskIntoConstraints="NO" id="10A-B6-7Jq">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="10A-B6-7Jq" firstAttribute="top" secondItem="SWv-8G-4ZQ" secondAttribute="bottom" constant="205" id="M2z-3D-sVy"/>
+                            <constraint firstItem="10A-B6-7Jq" firstAttribute="centerX" secondItem="ALQ-Iy-cRe" secondAttribute="centerX" id="VNE-cX-NcQ"/>
+                            <constraint firstItem="10A-B6-7Jq" firstAttribute="leading" secondItem="ALQ-Iy-cRe" secondAttribute="leadingMargin" constant="51" id="otu-my-Tld"/>
+                            <constraint firstItem="10A-B6-7Jq" firstAttribute="centerY" secondItem="ALQ-Iy-cRe" secondAttribute="centerY" id="qA0-jB-bvi"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="bgImage" destination="10A-B6-7Jq" id="DRG-7s-OYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSD-gn-wLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emoji alpha me" width="200" height="200"/>
+    </resources>
+</document>

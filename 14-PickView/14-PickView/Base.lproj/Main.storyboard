@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_4_PickView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="rNM-Yo-DUV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyk-JE-mIw">
+                                <rect key="frame" x="0.0" y="226" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="Ktt-EE-avn"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx6-Nd-MUH">
+                                <rect key="frame" x="30" y="482" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.2126047522" green="0.58464905099999998" blue="0.27200437500000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mh4-HU-avq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AP2-jb-pfl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2U-NY-ClL">
+                                <rect key="frame" x="0.0" y="572" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jkZ-PE-Z2m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rNM-Yo-DUV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Lh-YJ-4Xq"/>
+                            <constraint firstItem="Iyk-JE-mIw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5oc-Xy-XM1"/>
+                            <constraint firstItem="Iyk-JE-mIw" firstAttribute="width" secondItem="rNM-Yo-DUV" secondAttribute="width" id="Bco-i1-pOR"/>
+                            <constraint firstItem="Qx6-Nd-MUH" firstAttribute="top" secondItem="Iyk-JE-mIw" secondAttribute="bottom" constant="40" id="Ntk-GF-DgK"/>
+                            <constraint firstItem="Qx6-Nd-MUH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Tco-zP-Kpx"/>
+                            <constraint firstAttribute="trailing" secondItem="I2U-NY-ClL" secondAttribute="trailing" id="X5w-8i-CPL"/>
+                            <constraint firstItem="I2U-NY-ClL" firstAttribute="top" secondItem="Qx6-Nd-MUH" secondAttribute="bottom" constant="40" id="YaF-MF-kNY"/>
+                            <constraint firstItem="Qx6-Nd-MUH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGG-QT-khS"/>
+                            <constraint firstAttribute="trailing" secondItem="Qx6-Nd-MUH" secondAttribute="trailing" constant="30" id="iXT-EB-dIW"/>
+                            <constraint firstItem="rNM-Yo-DUV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lDx-Dv-I3N"/>
+                            <constraint firstAttribute="trailing" secondItem="rNM-Yo-DUV" secondAttribute="trailing" id="mTu-bU-Fdb"/>
+                            <constraint firstItem="Iyk-JE-mIw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="stf-yD-Jap"/>
+                            <constraint firstItem="rNM-Yo-DUV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5u-D7-ev3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rNM-Yo-DUV" secondAttribute="bottom" id="tD7-9w-AB1"/>
+                            <constraint firstItem="rNM-Yo-DUV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vWZ-MM-ypn"/>
+                            <constraint firstItem="Iyk-JE-mIw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xc8-oB-0cj"/>
+                            <constraint firstAttribute="trailing" secondItem="Iyk-JE-mIw" secondAttribute="trailing" id="zJF-2y-h9s"/>
+                            <constraint firstItem="I2U-NY-ClL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zNH-Dt-tel"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickView" destination="Iyk-JE-mIw" id="fyl-Ws-FQj"/>
+                        <outlet property="goBtn" destination="Qx6-Nd-MUH" id="pbw-Qm-zcf"/>
+                        <outlet property="resultLabel" destination="I2U-NY-ClL" id="ju4-E1-OF3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>

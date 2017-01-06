@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_点击换头像" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine" translatesAutoresizingMaskIntoConstraints="NO" id="yLB-28-OVO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="reJ-Bn-hml">
+                                <rect key="frame" x="291" y="267" width="76" height="79"/>
+                                <color key="backgroundColor" red="0.2126047522" green="0.58464905099999998" blue="0.27200437500000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="eyB-Te-nZp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yLB-28-OVO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FsW-3g-OYw"/>
+                            <constraint firstItem="reJ-Bn-hml" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="Jvc-dv-A5L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="reJ-Bn-hml" secondAttribute="bottom" constant="321" id="SxK-XE-NGH"/>
+                            <constraint firstItem="yLB-28-OVO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kLb-53-rwy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="reJ-Bn-hml" secondAttribute="trailing" constant="-8" id="rse-0k-ECa"/>
+                            <constraint firstAttribute="bottom" secondItem="yLB-28-OVO" secondAttribute="bottom" id="tm9-4d-AaK"/>
+                            <constraint firstAttribute="trailing" secondItem="yLB-28-OVO" secondAttribute="trailing" id="ykK-hZ-sN8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headImage" destination="reJ-Bn-hml" id="KB3-2G-7EL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.199999999999999" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine" width="375" height="670"/>
+    </resources>
+</document>

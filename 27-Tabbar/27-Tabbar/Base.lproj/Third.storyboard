@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hKT-2i-IWM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="475-gA-OJ5">
+            <objects>
+                <viewController id="iga-D9-Wlj" customClass="ThirdViewController" customModule="_7_Tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dxP-9T-qlj"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHb-tg-Hhe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ug4-hq-gSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Preview1" translatesAutoresizingMaskIntoConstraints="NO" id="JY7-Is-EoP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JY7-Is-EoP" firstAttribute="leading" secondItem="Ug4-hq-gSe" secondAttribute="leading" id="2aa-8x-h0K"/>
+                            <constraint firstAttribute="trailing" secondItem="JY7-Is-EoP" secondAttribute="trailing" id="8Oc-Ui-PqK"/>
+                            <constraint firstItem="JY7-Is-EoP" firstAttribute="top" secondItem="dxP-9T-qlj" secondAttribute="bottom" id="9kF-qD-8AK"/>
+                            <constraint firstItem="VHb-tg-Hhe" firstAttribute="top" secondItem="JY7-Is-EoP" secondAttribute="bottom" id="onG-W9-NqQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VTm-CZ-UN2"/>
+                    <connections>
+                        <outlet property="exploreImage" destination="JY7-Is-EoP" id="TVq-Bn-Uky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18K-wR-fiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="628"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="wOA-Kf-ZzB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hKT-2i-IWM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Explore" image="tabbarExploreHighlighted" id="bfw-aO-xQJ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mmz-eC-wWz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iga-D9-Wlj" kind="relationship" relationship="rootViewController" id="nrf-YL-aLC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLZ-LB-2AL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="629"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Preview1" width="375" height="667"/>
+        <image name="tabbarExploreHighlighted" width="23" height="23"/>
+    </resources>
+</document>
